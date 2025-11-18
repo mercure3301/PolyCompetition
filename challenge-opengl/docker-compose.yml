@@ -1,0 +1,12 @@
+services:
+  opengl-app:
+    build: .
+    container_name: opengl-3d-objects
+    environment:
+      - DISPLAY=${DISPLAY:-:99}
+    volumes:
+      - ./shaders:/app/shaders:ro
+    ports:
+      - "6080:6080"
+      - "5900:5900"
+
