@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter - Polyscav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div id="stats">
+                <div>Score: <span id="score">0</span></div>
+                <div>Level: <span id="level">1</span></div>
+                <div>XP: <span id="xp">0</span>/<span id="xpMax">100</span></div>
+                <div>Munitions: <span id="bullets">50</span></div>
+                <div>Vie: <span id="health">100</span>/<span id="maxHealth">100</span></div>
+            </div>
+        </div>
+        <div id="gameOverScreen" class="hidden">
+            <h1>GAME OVER</h1>
+            <p>Score Final: <span id="finalScore">0</span></p>
+            <p>Niveau Atteint: <span id="finalLevel">1</span></p>
+            <button id="restartBtn">Rejouer</button>
+        </div>
+        <div id="startScreen">
+            <h1>POLYSCAV SHOOTER</h1>
+            <p>Utilisez les flèches ou WASD pour bouger</p>
+            <p>Espace ou Clic pour tirer</p>
+            <p>Récupérez les munitions</p>
+            <p>Lorsque votre vie ou vos munitions tombent à 0, vous perdez !</p>
+            <button id="startBtn">Commencer</button>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="utils.js"></script>
+    <script src="gameState.js"></script>
+    <script src="entities.js"></script>
+    <script src="audio.js"></script>
+    <script src="player.js"></script>
+    <script src="spawn.js"></script>
+    <script src="collisions.js"></script>
+    <script src="ui.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
+
