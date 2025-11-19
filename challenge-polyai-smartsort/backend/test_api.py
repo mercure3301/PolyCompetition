@@ -116,22 +116,16 @@ def run_all_tests():
     
     results = []
     
-    # Test 1: Root endpoint
     results.append(("Root endpoint", test_root()))
     
-    # Test 2: Classification par texte
     results.append(("Classification texte", test_classify_text()))
     
-    # Test 3: Historique
     results.append(("Historique", test_history()))
     
-    # Test 4: Statistiques
     results.append(("Statistiques", test_stats()))
     
-    # Test 5: Catégories
     results.append(("Catégories", test_categories()))
     
-    # Résumé
     print("\n" + "="*60)
     print("Résumé des tests")
     print("="*60)
