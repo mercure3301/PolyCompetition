@@ -2,6 +2,8 @@
 
 Un jeu de space shooter développé en JavaScript/Canvas
 
+Lien du jeu : [https://spacewar-scav.vercel.app/](https://spacewar-scav.vercel.app/)
+
 ## Contrôles
 
 - **Flèches directionnelles** ou **WASD** : Déplacer le vaisseau
